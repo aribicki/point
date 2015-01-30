@@ -14,4 +14,10 @@ public class Point {
 	  x = 0.0;
  	  y = 0.0;
 	}
+// calculate distance between two points	
+	 public double distance(Point that) {
+		double xdiff = x - that.x;
+		double ydiff = y - that.y;
+		return Math.sqrt(xdiff * xdiff + ydiff * ydiff);
+		}
 }
