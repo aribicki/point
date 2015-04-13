@@ -3,7 +3,7 @@
 	30 January 2015
 */
 public class Point {
-	public double x,y;
+	private double x,y;
 // Print out the coordinates for a single point
 	public void printPoint() {
 	  System.out.println("X coordinate: " +  this.x);
@@ -20,4 +20,33 @@ public class Point {
 		double ydiff = y - that.y;
 		return Math.sqrt(xdiff * xdiff + ydiff * ydiff);
 		}
-}
+// set a point to a brand new value
+// this is an mutator (also called a setter)
+	public void setPoint(double newX, double newY) {
+	 this.x = newX;
+	 this.y = newY;
+//	public void setPoint(double newX) {
+//	 this.x = newX; }
+//	public void setPoint(double newY) {
+//	 this.y = newY;}
+
+	
+	// get the value of x this is also called an accessor or getter
+	public double getX() {
+	 return x;
+	}
+
+	// Get the value
+	public double getY() {
+	 return y;
+	}
+
+	//get x
+	public void setX(double newX) {
+	x = newX;
+	}
+	public void setY(double newY) {
+	y = newY;
+	}
+
+}}
