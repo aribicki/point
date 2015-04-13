@@ -9,14 +9,14 @@ public class PointDriver {
 	Point upperRight = new Point();
 	Point middlePoint = new Point();
 // create three points
-	lowerLeft.x = 0.0;
-	lowerLeft.y = 0.0;
+	lowerLeft.setX(0.0);
+	lowerLeft.setY(0.0);
 //give them some values
-	upperRight.x = 1280.0;
-	upperRight.y = 1024.0;
+	upperRight.setX(1280.0);
+	upperRight.setY(1024.0);
 
-	middlePoint.x = 640.0;
-	middlePoint.y = 512.0;
+	middlePoint.setX(640.0);
+	middlePoint.setY(512.0);
 // print one of the points
 	upperRight.printPoint();
 	middlePoint.printPoint();
